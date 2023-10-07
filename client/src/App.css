@@ -101,3 +101,19 @@ More button */
   width: 25%;
   border: 10px solid white;
 }
+
+/* Movie genre */
+.movieGenreButton {
+  background-color: antiquewhite;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.movieGenre {
+  padding: 10px 24px;
+}

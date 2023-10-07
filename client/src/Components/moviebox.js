@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Modal, show, Button } from "react-bootstrap";
+import MovieGenre from "./moviegenre";
 
 const API_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 const API_GENRE =
@@ -18,7 +19,6 @@ function MovieBox({
     const BackDropImageAPI = API_IMAGE_BASE + backdrop_path;
 
     const [show, setShow] = useState(false);
-    const [genre, setGenre] = useState([]);
 
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
@@ -33,8 +33,7 @@ function MovieBox({
                         More
                     </button>
                     <Modal show={show} size="xl" onHide={handleClose}>
-                        <Modal.Header closeButton>
-                        </Modal.Header>
+                        <Modal.Header closeButton></Modal.Header>
                         <Modal.Body>
                             <div style={{ backgroundImage: `url(${BackDropImageAPI})` }}>
                                 <img className="imagecenter" src={ImageAPI} />
@@ -48,10 +47,17 @@ function MovieBox({
                                 <b>Overview : </b>
                             </p>
                             <p>{overview}</p>
-                            {/* TODO : get genre name by passing genre id from the api */}
-                            <p>
-                                <b>Genre :</b> { }
-                            </p>
+                            <div>
+                                <p>
+                                    <b>Genre : </b>
+                                    {genre_ids.map((genre) => (
+                                        <div style={{ display: "inline-block" }}>
+                                            {" "}
+                                            <MovieGenre genreID={genre} />
+                                        </div>
+                                    ))}
+                                </p>
+                            </div>
                             <p>
                                 <b>Average Vote:</b> {vote_average}/10
                             </p>

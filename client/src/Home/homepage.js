@@ -30,7 +30,6 @@ export function Home() {
                         <MovieBox key={mov.id} {...mov} />
                     ))}
                 </div>
-
             </div>
         </div>
     );
