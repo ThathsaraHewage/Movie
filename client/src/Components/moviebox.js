@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Modal, show, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import MovieGenre from "./moviegenre";
 
 const API_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
-const API_GENRE =
-    "https://api.themoviedb.org/3/genre/movie/list?api_key=f5baf8c74c7d5f00a242c165979d0913";
 
 function MovieBox({
     title,

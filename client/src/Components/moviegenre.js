@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
+const API_GENRE =
+    "https://api.themoviedb.org/3/genre/movie/list?api_key=f5baf8c74c7d5f00a242c165979d0913";
 
 function MovieGenre({ genreID }) {
     {

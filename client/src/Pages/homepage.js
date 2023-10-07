@@ -22,6 +22,7 @@ export function Home() {
     return (
         <div>
             <NavBar />
+
             <h2>TRENDING MOVIES</h2>
 
             <div className="container">
