@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import MovieGenre from "./moviegenre";
 
+// TODO : add to a seperate constant file and use
+// Image base API 
 const API_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 
 function MovieBox({
@@ -13,7 +15,9 @@ function MovieBox({
     overview,
     genre_ids,
 }) {
+    // movie images fetching API url
     const ImageAPI = API_IMAGE_BASE + poster_path;
+    // backdrop movie images fetching API url
     const BackDropImageAPI = API_IMAGE_BASE + backdrop_path;
 
     const [show, setShow] = useState(false);

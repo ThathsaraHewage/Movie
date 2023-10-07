@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MovieBox from "../Components/moviebox";
 import NavBar from '../Components/navbar'
 
+// TODO : add to a seperate constant file and use
+// Movies information fetching API URL - popular movies
 const API_URL =
     "https://api.themoviedb.org/3/movie/popular?api_key=f5baf8c74c7d5f00a242c165979d0913";
 

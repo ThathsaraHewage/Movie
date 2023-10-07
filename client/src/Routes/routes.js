@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from '../Pages/homepage';
 import UpcomingMovies from '../Pages/upcomingmovies';
 
+/*All routes to navigate to pages*/
 const Routing = () => {
     return (
         <BrowserRouter>

@@ -1,11 +1,12 @@
 import React from "react";
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 // import "./slide.css";
 
 const API_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 
 function CarousalAutoSlider({ title, poster_path }) {
+    // movie images fetching API url
     const ImageAPI = API_IMAGE_BASE + poster_path;
 
     return (
