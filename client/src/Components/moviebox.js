@@ -11,9 +11,12 @@ function MovieBox({
 }) {
     console.log(API_IMAGE_BASE + poster_path);
     return (
-        <div>
-            <p>{title}</p>
-            <img src={API_IMAGE_BASE + poster_path} />
+        <div className="card text-center mb-3">
+            <div className="card-body">
+                <img className="card-img-top" src={API_IMAGE_BASE + poster_path} />
+                <h5>{title}</h5>
+                <button>More ... </button>
+            </div>
         </div>
     );
 }
