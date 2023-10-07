@@ -84,7 +84,7 @@ More button */
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: antiquewhite;
   color: black;
 }
 
@@ -93,14 +93,11 @@ More button */
   color: white;
 }
 
-@media (min-width: 40rem) {
-  .container {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .container {
-    width: 33.3333%;
-  }
+/* Image */
+.imagecenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border: 10px solid white;
 }

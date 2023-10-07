@@ -5,7 +5,7 @@ import MovieBox from "../Components/moviebox";
 import NavBar from '../Components/navbar'
 
 const API_URL =
-    "https://api.themoviedb.org/3/movie/popular?api_key=82fe3f14052d63038671e6b2d8673c4b";
+    "https://api.themoviedb.org/3/movie/popular?api_key=f5baf8c74c7d5f00a242c165979d0913";
 
 export function Home() {
     const [movies, setMovies] = useState([]);
@@ -14,7 +14,7 @@ export function Home() {
         fetch(API_URL)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
+                // console.log(data);
                 setMovies(data.results);
             });
     }, []);
