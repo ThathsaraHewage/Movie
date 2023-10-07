@@ -15,7 +15,7 @@ function MovieBox({
             <div className="card-body">
                 <img className="card-img-top" src={API_IMAGE_BASE + poster_path} />
                 <h5>{title}</h5>
-                <button>More ... </button>
+                <button className="button button2">More</button>
             </div>
         </div>
     );
