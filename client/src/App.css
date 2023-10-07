@@ -10,6 +10,7 @@ body {
   background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
 }
 
+/* grid view */
 .container {
   width: 100%;
   margin: 1em auto;
@@ -40,7 +41,8 @@ h5 {
   text-align: center;
   font-family: Helvetica;
 }
-
+/* 
+More button */
 .button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -63,6 +65,31 @@ h5 {
 
 .button2:hover {
   background-color: #008cba;
+  color: white;
+}
+
+/* Nav Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
   color: white;
 }
 
